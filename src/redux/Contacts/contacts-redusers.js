@@ -32,6 +32,7 @@ const itemsReducer = createReducer(INITIAL_CONTACTS, {
 const filterReducer = createReducer('', {
   [filteredContact]: (_, { payload }) => payload,
 });
+
 export default combineReducers({
   items: itemsReducer,
   filter: filterReducer,
